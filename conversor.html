@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>✈️Explorar Mundo</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="conversor.html" class="nav-link">Conversor</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conversor_section">
+        <div class="form">
+            <label for="valor">Valor em Reais</label>
+            <input type="number" id="valor" placeholder="Digite um valor">
+        </div>
+        <div class="form">
+            <label for="moeda_label">Converter para:</label>
+            <select id="moeda">
+            <option value="USD">Dolar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+        </select>
+        <button onclick="converter()">Converter</button>
+        </div>
+        <div id="resultado"></div>
+        </div>
+    </section>
+<script src="script.js"></script></body>
+</html>
